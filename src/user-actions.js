@@ -5,7 +5,6 @@ import {
   View,
   TouchableHighlight,
   Text,
-  Alert,
   StyleSheet
 } from "react-native";
 
@@ -36,20 +35,22 @@ const styles = StyleSheet.create({
 
 const UserActions = (props) => {
   console.log(props);
-  return (
-	  <View style={styles.actionsContainer}>
+ return (
+	<View style={styles.actionsContainer}>
 	      <TouchableHighlight
         	style={[styles.actionButton, styles.actionButtonDestructive]}
 	        onPress={() => {
- 	
+		if(props.item.service==="TNEB"){
+			 Linking.openURL(`${props.item.link}`);
+		}else{
+			 Linking.openURL(`tel:${props.item.phone}`);
+		}
 	       }
-        }
-      >
-          <Text style={styles.actionButtonText}>call</Text>
-
+         }
+ 	>
+        	  <Text style={styles.actionButtonText}>call</Text>
      		 </TouchableHighlight>
 </View>
-
   );
 };
 
