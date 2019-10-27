@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/arihant/precache-manifest.ecaffcf5a1ffff6405476dcb8666cc92.js"
+  "/arihant/precache-manifest.7d3e5f11d0f9bc303e0192d43d9052fb.js"
 );
 
 workbox.clientsClaim();

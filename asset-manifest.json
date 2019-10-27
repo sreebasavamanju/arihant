@@ -1,13 +1,13 @@
 {
   "main.css": "/arihant/static/css/main.256ab9dc.chunk.css",
-  "main.js": "/arihant/static/js/main.44e460e2.chunk.js",
-  "main.js.map": "/arihant/static/js/main.44e460e2.chunk.js.map",
+  "main.js": "/arihant/static/js/main.3d3d5770.chunk.js",
+  "main.js.map": "/arihant/static/js/main.3d3d5770.chunk.js.map",
   "static/js/1.8153b579.chunk.js": "/arihant/static/js/1.8153b579.chunk.js",
   "static/js/1.8153b579.chunk.js.map": "/arihant/static/js/1.8153b579.chunk.js.map",
   "runtime~main.js": "/arihant/static/js/runtime~main.6efa410f.js",
   "runtime~main.js.map": "/arihant/static/js/runtime~main.6efa410f.js.map",
   "static/css/main.256ab9dc.chunk.css.map": "/arihant/static/css/main.256ab9dc.chunk.css.map",
   "index.html": "/arihant/index.html",
-  "precache-manifest.ecaffcf5a1ffff6405476dcb8666cc92.js": "/arihant/precache-manifest.ecaffcf5a1ffff6405476dcb8666cc92.js",
+  "precache-manifest.7d3e5f11d0f9bc303e0192d43d9052fb.js": "/arihant/precache-manifest.7d3e5f11d0f9bc303e0192d43d9052fb.js",
   "service-worker.js": "/arihant/service-worker.js"
 }
