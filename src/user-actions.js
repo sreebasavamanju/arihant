@@ -35,23 +35,36 @@ const styles = StyleSheet.create({
 
 const UserActions = (props) => {
   console.log(props);
+
+if(props.item.service==="TNEB"){
  return (
-	<View style={styles.actionsContainer}>
-	      <TouchableHighlight
-        	style={[styles.actionButton, styles.actionButtonDestructive]}
-	        onPress={() => {
-		if(props.item.service==="TNEB"){
-			 Linking.openURL(`${props.item.link}`);
-		}else{
-			 Linking.openURL(`tel:${props.item.phone}`);
-		}
-	       }
+         <View style={styles.actionsContainer}>
+              <TouchableHighlight
+                style={[styles.actionButton, styles.actionButtonText]}
+                onPress={() => {
+                         Linking.openURL(`${props.item.link}`);
+               }
          }
- 	>
-        	  <Text style={styles.actionButtonText}>call</Text>
-     		 </TouchableHighlight>
-</View>
+        >
+                  <Text style={styles.actionButtonText}>Open link </Text>
+                 </TouchableHighlight>
+        </View>
   );
+}else {
+return (
+         <View style={styles.actionsContainer}>
+              <TouchableHighlight
+                style={[styles.actionButton, styles.actionButtonText]}
+                onPress={() => {
+                         Linking.openURL(`tel:${props.item.phone}`);
+               }
+         }
+        >
+                  <Text style={styles.actionButtonText}>Call </Text>
+                 </TouchableHighlight>
+        </View>
+);	
+  }
 };
 
 export default UserActions;
